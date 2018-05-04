@@ -29,7 +29,6 @@ public class CrimePagerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crime_pager);
-
         UUID crimeId = (UUID) getIntent().getSerializableExtra(EXTRA_CRIME_ID);
         mViewPager = findViewById(R.id.activity_crime_pager_view_pager);
 
@@ -45,7 +44,6 @@ public class CrimePagerActivity extends AppCompatActivity {
 
             @Override
             public int getCount() {
-
                 return mCrimes.size();
             }
         });
